@@ -1,0 +1,116 @@
+.whole{
+    width: 100px;
+    height: 200px;
+    border-radius: 45%;
+    border: 2px solid transparent;
+    background-color: lightblue;
+    z-index: 1;
+  }
+  
+  .face{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid transparent;
+    border-radius: 90%;
+    left: 30px;
+    top: 5px
+  }
+  
+  .leftEye{
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    position: relative;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 100%;
+    left: 10px;
+    top: 25px;
+  }
+
+.rightEye{
+    width: 15px;
+    height: 15px;
+    z-index: 2;
+    position: relative;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 100%;
+    left: 35px;
+    top: 15px;
+}
+
+.mouth{
+    width: 15px;
+    height: 5px; /* as the half of the width */
+    background-color: transparent;
+    border-top-left-radius: 60%;  /* 100px of height + 10px of border */
+    border-top-right-radius: 60%; /* 100px of height + 10px of border */
+    border: 2px solid black;
+    border-bottom: 0;
+    z-index: 2;
+    position: relative;
+    top: 20px;
+    left: 15px;  
+}
+
+.body{
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    position: relative;
+    background: transparent;
+    left: -5px;
+    top: -5px;
+}
+
+.leftFoot{
+    width: 20px;
+    height: 5px;
+    z-index: 2;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: red;
+    top: 5px;
+    left: 40px;
+}
+
+.rightFoot{
+    width: 20px;
+    height: 5px;
+    z-index: 1;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: red;
+    top: 124px;
+    left: 65px;
+}
+
+.leftArm{
+    width: 20px;
+    height: 60px;
+    position: relative;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 45%;
+    top: 13px;
+}
+
+.rightArm{
+    width: 20px;
+    height: 60px;
+    position: relative;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 45%;
+    left: 80px;
+    top: -50px;
+}
