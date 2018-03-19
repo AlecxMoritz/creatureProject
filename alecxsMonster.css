@@ -1,59 +1,62 @@
+body {
+    background-color: rgb(87, 49, 87);
+}
+
 .whole{
-    width: 100px;
-    height: 200px;
-    border-radius: 45%;
+    margin: auto;
+    margin-top: 5em;
+    width: 20em;
+    height: 37em;
+    border-radius: 48%;
+    position: relative;
+    left: 3em;
     border: 2px solid transparent;
-    background-color: lightblue;
+    background-color: black;
     z-index: 1;
   }
   
-  .face{
-    width: 70px;
-    height: 70px;
-    position: relative;
-    z-index: 2;
-    border: 1px solid transparent;
-    border-radius: 90%;
-    left: 30px;
-    top: 5px
-  }
+  .eyes{
+   z-index: 1;   
+   background-color: transparent; 
+   width: 10em;
+   height: 5em;
+   position:relative;
+   left:6em;
+   top: 4em;
+   display: flex;
+   
+  
+}
   
   .leftEye{
-    width: 10px;
-    height: 10px;
-    z-index: 2;
-    position: relative;
-    background-color: black;
-    border: 1px solid black;
-    border-radius: 100%;
-    left: 10px;
-    top: 25px;
+      z-index: 3;
+    width: 2em;
+    height: 5em;
+    border-radius: 90%;
+    background-color: white;
+    display: flex;
+    margin: auto;
   }
 
 .rightEye{
-    width: 15px;
-    height: 15px;
-    z-index: 2;
-    position: relative;
-    background-color: black;
-    border: 1px solid black;
-    border-radius: 100%;
-    left: 35px;
-    top: 15px;
+    z-index: 3;
+    width: 2em;
+    height: 5em;
+    border-radius: 90%;
+    background-color: white;
+    margin: auto;
 }
 
 .mouth{
-    width: 15px;
-    height: 5px; /* as the half of the width */
-    background-color: transparent;
-    border-top-left-radius: 60%;  /* 100px of height + 10px of border */
-    border-top-right-radius: 60%; /* 100px of height + 10px of border */
-    border: 2px solid black;
-    border-bottom: 0;
+    width: 1em;
+    height: 3em; /* as the half of the width */
+    background-color: white;
     z-index: 2;
+    border-radius: 60%;
+    transform: rotate(10deg);
     position: relative;
-    top: 20px;
-    left: 15px;  
+    top: 7em;
+    left: 10em; 
 }
 
 .body{
@@ -68,49 +71,92 @@
     top: -5px;
 }
 
-.leftFoot{
-    width: 20px;
-    height: 5px;
-    z-index: 2;
-    position: relative;
-    border: 1px solid black;
-    border-radius: 50%;
-    background-color: red;
-    top: 5px;
-    left: 40px;
-}
-
-.rightFoot{
-    width: 20px;
-    height: 5px;
-    z-index: 1;
-    position: absolute;
-    border: 1px solid black;
-    border-radius: 50%;
-    background-color: red;
-    top: 124px;
-    left: 65px;
-}
 
 .leftArm{
-    width: 20px;
-    height: 60px;
+    width: 5em;
+    height: 12em;
     position: relative;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    top: 11em;
+    background-color: black;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 4px solid white;
     border-radius: 45%;
-    top: 13px;
 }
 
 .rightArm{
-    width: 20px;
-    height: 60px;
+    width: 5em;
+    height: 12em;
     position: relative;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    left: 15em;
+    top: -1em;
+    background-color: black;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 4px solid white;
     border-radius: 45%;
-    left: 80px;
-    top: -50px;
+
 }
+
+.shadow {
+    width: 8em;
+    height: 1em;
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    border-radius: 50%;
+    bottom: -7em;
+    left: 50%;
+}
+
+
+/* maybe will not work??? */
+
+.floating{ 
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    50% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+.shrink{
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:2s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+    
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        50% {-webkit-transform: scale(0.95);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        50% {-moz-transform: scale(0.95);}
+        to {-moz-transform: scale(0.9);}    
+    }
+
