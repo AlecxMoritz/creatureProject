@@ -2,16 +2,16 @@ body {
     background-color: rgb(87, 49, 87);
 }
 
-.whole{
+.head{
     margin: auto;
     margin-top: 5em;
-    width: 20em;
+    width: 19%;
     height: 37em;
     border-radius: 48%;
     position: relative;
     left: 3em;
-    border: 2px solid transparent;
-    background-color: black;
+    border: 1px solid transparent;
+    background-color:black;
     z-index: 1;
   }
   
@@ -56,7 +56,7 @@ body {
     transform: rotate(10deg);
     position: relative;
     top: 7em;
-    left: 10em; 
+    left: -4.5em; 
 }
 
 .body{
@@ -97,6 +97,15 @@ body {
     border-radius: 45%;
 
 }
+/* 
+.torso {
+    width: 120px;
+    height: 30px;
+    color: blue;
+    position: relative;
+} */
+
+
 
 .shadow {
     width: 8em;
@@ -108,8 +117,7 @@ body {
     left: 50%;
 }
 
-
-/* maybe will not work??? */
+/* float */
 
 .floating{ 
     -webkit-animation-name: Floatingx;
@@ -122,7 +130,8 @@ body {
     -moz-animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
-
+    height: 100%;
+    width: 100%;
 }
 
 @-webkit-keyframes Floatingx{
